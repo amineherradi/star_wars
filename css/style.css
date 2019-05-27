@@ -1,3 +1,85 @@
-header {
-    font-family: "Arial";
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.header {
+    background-color: rgba(0,0,0,0.7);
+    z-index: 9999;
+}
+.header a {
+    color: white;
+    font-weight: 600;
+}
+
+.section-1-1 {
+    background-image: url("../img/header-bg-2x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+.section-1-2 {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center 5vh;
+    background-size: contain;
+    height: inherit;
+}
+
+.section-2 {
+    padding: 5vh;
+}
+
+.section-3-1 {
+    height: 30vh;
+}
+.section-3-2 {
+    background-image: url("../img/kiloren-2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: inherit;
+}
+.section-4 {
+    padding: 5vh;
+}
+.section-4 div article p{
+    padding-left: 330px;
+}
+
+.section-5-1 {
+    height: 30vh;
+}
+.section-5-2 {
+    background-image: url("../img/stormtroopers-2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: inherit;
+}
+
+.section-6 {
+    background-image: url("../img/darthvader_2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+.section-6 header div {
+    margin: 20px;
+}
+.section-6 header div h4 {
+    font-size: 14px;
+    color: grey;
+}
+
+.section-6 div nav h4 {
+    font-size: 18px;
+    color: grey;
+}
+.section-6 header div h4 b {
+    color: white;
+}
+.section-6 a {
+    text-decoration: underline;
+    color: grey;
 }
