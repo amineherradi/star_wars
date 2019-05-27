@@ -8,12 +8,14 @@ body {
 .header a {
     color: white;
     font-weight: 600;
+    padding: 3vh;
 }
 
 .section-1-1 {
     background-image: url("../img/header-bg-2x.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     height: 50vh;
 }
@@ -37,6 +39,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: inherit;
 }
 .section-4 {
@@ -62,6 +65,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 40vh;
 }
 .section-6 header div {
