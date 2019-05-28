@@ -1,18 +1,21 @@
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
 }
 .header {
     background-color: rgba(0,0,0,0.7);
     z-index: 9998;
 }
 .header .menu-button {
-    background-image: url("../img/menu.svg");
+    background-image: url("../img/menu.png");
     background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
     height: 50px;
     width: 50px;
-    margin: 2vh;
+    position: relative;
+    top: 25px;
+    left: 35px;
     z-index: 9999;
 }
 .header a {
@@ -27,24 +30,125 @@ body {
     display: none;
 }
 
-.section-1-1 {
-    background-image: url("../img/header-bg-2x.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 50vh;
+@media (max-width: 576px) {
+    .menu-button {
+        display: block;
+    }
+    .small-menu {
+        display: block;
+    }
+    .big-menu {
+        display: none;
+    }
+    .section-1-1 {
+        background-image: url("../img/header-bg-2x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 35vh;
+    }
+    .section-1-2 {
+        background-image: url("../img/logo.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        height: inherit;
+    }
 }
-.section-1-2 {
-    background-image: url("../img/logo.png");
-    background-repeat: no-repeat;
-    background-position: center 5vh;
-    background-size: contain;
-    height: inherit;
+@media (min-width: 576px) {
+    .menu-button {
+        display: block;
+    }
+    .small-menu {
+        display: block;
+    }
+    .big-menu {
+        display: none;
+    }
+    .section-1-1 {
+        background-image: url("../img/header-bg-2x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 90vh;
+    }
+    .section-1-2 {
+        background-image: url("../img/logo.png");
+        background-repeat: no-repeat;
+        background-position: center 30px;
+        background-size: contain;
+        height: inherit;
+    }
 }
+@media (min-width: 768px) {
+    .menu-button {
+        float: left;
+        display: block;
+    }
+    .small-menu {
+        display: block;
+    }
+    .big-menu {
+        display: none;
+    }
+    .section-1-1 {
+        background-image: url("../img/header-bg-2x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 45vh;
+    }
+    .section-1-2 {
+        background-image: url("../img/logo.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        height: inherit;
+    }
+}
+@media (min-width: 992px) {
+    .menu-button {
+        display: none;
+    }
+    .small-menu {
+        display: none;
+    }
+    .big-menu {
+        display: block;
+    }
+    .section-1-1 {
+        background-image: url("../img/header-bg-2x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 65vh;
+    }
+    .section-1-2 {
+        background-image: url("../img/logo.png");
+        background-repeat: no-repeat;
+        background-position: center 10vh;
+        background-size: contain;
+        height: inherit;
+    }
+}
+@media (min-width: 1200px) {}
 
 .section-2 {
     padding: 5vh;
+}
+
+.advertisment {
+    background-image: url("../img/ad.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 600px;
+    position: sticky;
+    top: 10vh;
 }
 
 .section-3-1 {
@@ -61,7 +165,7 @@ body {
 .section-4 {
     padding: 5vh;
 }
-.section-4 div article p{
+.section-4 div div p{
     padding-left: 330px;
 }
 
